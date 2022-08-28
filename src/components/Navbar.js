@@ -1,5 +1,5 @@
 import React from 'react'
-import {useSelector} from 'react-redux'
+import { useSelector } from 'react-redux'
 
 const Navbar = () => {
     const amount = useSelector(state => state.amount)
@@ -13,16 +13,9 @@ const Navbar = () => {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                            {/* <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/">Home</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="/">Link</a>
-                            </li> */}
                         </ul>
                         <div>
                             <button className='btn-primary' disabled={true} >Your Account Balance: {amount}</button>
-
                         </div>
                     </div>
                 </div>
